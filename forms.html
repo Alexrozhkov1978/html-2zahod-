@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page forms</title>
+</head>
+<body>
+    <p> Clik to go to <a href="index2.html" title="go to main page"> <b>Home!</b> </a></p>
+    <h1> Lets create a table </h1>
+    <table border="1">
+        <tr>
+        <th></th><th>Something1</th><th>Something2</th><th>Something3</th><th>Something4</th><th rowspan="3">Sumrow</th>
+        </tr>
+        <tr>
+            <th>Somewhere1</th><td>One</td><td>Two</td><td>Three</td><td>For</td>
+        </tr>
+        <tr>
+            <th>Somewhere2</th><td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <th>Sum</th><td colspan="4">50</td><td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    
+    <form id="form-2" method="POST" action = "/action.php" target="blank.html">
+        <label> Client name <input type="text" name="client-name" placeholder="Client bame" required>
+        </label>
+        <p>Client gender</p>
+        <label> 
+         <input type="radio" name="client-gender" value="male" checked> Male </label>
+         <label>
+         <input type="radio" name="client-gender" value="female"> Female
+        </label>
+         <label>
+         <input type="radio" name="client-gender" value="other"> Other
+        </label>
+        <p>Client gender with checkbox</p>
+        <label>
+         <input type="checkbox" name="client-gender-box" value="otherbox"> Other
+        </label>
+        <label>
+         <input type="checkbox" name="client-gender-box" value="malebox" checked> Male
+        </label>
+        <label>
+         <input type="checkbox" name="client-gender-box" value="femalebox"> Female
+        </label>
+        <input type="Submit" value="Subbbmmmeeet"> 
+    </form>
+    <br>
+    <br>
+    <form id="form-3" method="POST">
+        <fieldset>
+            <legend> Personal information</legend>
+            Your name: <br>
+            <input type="text" name="your-name" placeholder="Your name">
+            <br>
+            Your surename: <br>
+            <input type="text" name="your-name" placeholder="Your surename">
+            <br>
+            <input lang="en" type="submit">
+            <input lang="en" type="reset"> 
+        </fieldset>
+    </form>
+    <br>
+    <hr>
+    <p> Name of cat </p>
+    <select name="cat" size="3" multiple>
+        <option>Tom</option>
+        <option>John</option>
+        <option selected> Natali</option>
+        <option>Natali</option>
+        <option>Natali</option>
+        <option>Natali</option>
+    </select>
+    <br>
+    <hr>
+    <form method="POST" action="https://formspree.io/alexshura@gmail.com" >
+        <input list="cars" name="car">
+        <datalist id="cars">
+            <option>Opel</option>
+            <option>Ferrary</option>
+            <option>Tesla</option>
+            <option>Oka</option>
+        </datalist>
+        <input type="submit">
+    </form>
+</body>
+</html>
